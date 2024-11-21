@@ -3,7 +3,8 @@ import streamlit as st
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-scaler = StandardScaler()
+scaler = joblib.load("Scaler.pkl")
+
 st.set_page_config(layout = "wide")
 st.title("Restaurant Rating Prediction App")
 st.caption("This app helps predict a restaurant's review class")
