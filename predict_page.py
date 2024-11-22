@@ -25,7 +25,6 @@ def show_predict_page():
     X = scaler.transform(my_X_values)
 
     if btnPredict:
-        st.snow()
         rating = model.predict(X)
         
         if rating < 2.5:
