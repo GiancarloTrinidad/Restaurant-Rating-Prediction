@@ -22,7 +22,7 @@ def show_explore_page():
         fig1, ax1 = plt.subplots()
         ax1.pie(data, labels=data.index, autopct="%1.1f%%", shadow=True, startangle=90)
         ax1.axis("equal")
-        st.write("""#### Percentage of Restaurants based on Online Delivery""")
+        st.write("""#### Percentage of Restaurants offering Online Delivery""")
         st.pyplot(fig1)
 
     with col2:
@@ -30,7 +30,7 @@ def show_explore_page():
         fig2, ax2 = plt.subplots()
         ax2.pie(data, labels=data.index, autopct="%1.1f%%", shadow=True, startangle=90)
         ax2.axis("equal")
-        st.write("""#### Percentage of Restaurants based on Table Booking""")
+        st.write("""#### Percentage of Restaurants with Table Booking""")
         st.pyplot(fig2)
 
     st.write("""#### Average Rating vs. Average Cost (for 2 people)""")
